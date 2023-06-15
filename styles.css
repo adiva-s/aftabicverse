@@ -100,7 +100,10 @@ h3{
 }
 
 .about{
-    margin: 0 auto;
-    width: 40%;
+    display: flex;
+    justify-content: space-between; /* Adjust the alignment as needed */
+    align-items: center; /* Adjust the alignment as needed */
+    font-size:20px;
+    color: black;
 }
   
