@@ -106,4 +106,36 @@ h3{
     font-size:20px;
     color: black;
 }
+
+.slideshow {
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  img {
+    width: 800px; /* Set the desired width for the images */
+    height: 800px; /* Set the desired height for the images */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
   

@@ -31,8 +31,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  var typed = new Typed('#typed-text', {
-    strings: ['Welcome to the Aftab-verse 📰'], // Set the strings you want to type
-    typeSpeed: 80, // Adjust the typing speed as needed
+var typed = new Typed('#typed-text', {
+    strings: ['Welcome to the Aftab-verse 🖊️'], // Set the strings you want to type
+    typeSpeed: 100, // Adjust the typing speed as needed
     loop: true // Enable looping of the typed text
-  });
+});
+
+
+var slideIndex = 1;
+showSlide(slideIndex);
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+  var slides = document.getElementsByClassName("slides")[0].getElementsByTagName("img");
+  
+  if (n > slides.length) {
+    slideIndex = 1;
+  } else if (n < 1) {
+    slideIndex = slides.length;
+  }
+  
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex - 1].style.display = "block";
+}
