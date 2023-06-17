@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   var typed = new Typed('#typed-text', {
-    strings: ['Welcome to the Aftab-verse!  '], // Set the strings you want to type
+    strings: ['Welcome to the Aftab-verse 📰'], // Set the strings you want to type
     typeSpeed: 80, // Adjust the typing speed as needed
     loop: true // Enable looping of the typed text
   });
