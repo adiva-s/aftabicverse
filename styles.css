@@ -58,7 +58,7 @@ nav {
 .logo-image {
     width: 70px;
     height: auto;
-    margin-right: 10px; /* Optional margin for spacing between the links */
+    margin-right: 10px; 
 }
 
 .nav-links li {
@@ -101,41 +101,65 @@ h3{
 
 .about{
     display: flex;
-    justify-content: space-between; /* Adjust the alignment as needed */
-    align-items: center; /* Adjust the alignment as needed */
+    justify-content: space-between; 
+    align-items: center; 
     font-size:20px;
     color: black;
 }
 
 .slideshow {
     position: relative;
-  }
+}
   
-  .slides {
+.slides {
     display: flex;
-  }
+}
   
-  img {
-    width: 800px; /* Set the desired width for the images */
-    height: 800px; /* Set the desired height for the images */
-    object-fit: cover; /* Maintain aspect ratio and fill the container */
-  }
+img {
+    width: 800px; 
+    height: 800px; 
+    object-fit: cover; 
+}
   
-  .prev,
-  .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     font-size: 30px;
     font-weight: bold;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.5);
-  }
+}
   
-  .prev {
+.prev {
     left: 10px;
-  }
+}
   
-  .next {
+.next {
     right: 10px;
-  }
+}
   
+button {
+    padding: 10px 20px;
+    background-color: rgb(163, 74, 33);
+    color: rgb(248, 228, 212);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+  
+button:hover {
+    background-color: rgb(223, 172, 148);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+  
+.button-container button {
+    margin-right: 10px; 
+}
