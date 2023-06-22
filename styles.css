@@ -115,7 +115,7 @@ h3{
     display: flex;
 }
   
-img {
+.slides img {
     width: 800px; 
     height: 800px; 
     object-fit: cover; 
@@ -162,4 +162,11 @@ button:hover {
   
 .button-container button {
     margin-right: 10px; 
+}
+
+.issues-cover a img{
+    height: 500px;
+    width: 350px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
