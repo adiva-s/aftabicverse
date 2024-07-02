@@ -46,3 +46,20 @@ function showSlide(n) {
   
   slides[slideIndex - 1].style.display = "block";
 }
+
+function searchIssues() {
+  let input = document.getElementById('searchInput').value.toUpperCase();
+  let issues = document.getElementsByClassName('issues-cover');
+  
+  for (let i = 0; i < issues.length; i++) {
+      let img = issues[i].getElementsByTagName("img")[0];
+      if (img) {
+          let txtValue = img.alt.toUpperCase();
+          if (txtValue.indexOf(input) > -1) {
+              issues[i].style.display = "";
+          } else {
+              issues[i].style.display = "none";
+          }
+      }       
+  }
+}
